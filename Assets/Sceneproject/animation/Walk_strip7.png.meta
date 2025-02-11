@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: 7f44fc5a9c4a14c46afce1b0435e3fcb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -433540847195273764
+    second: Walk_strip7_0
+  - first:
+      213: 4450194018000194450
+    second: Walk_strip7_1
+  - first:
+      213: -3810723060401329441
+    second: Walk_strip7_2
+  - first:
+      213: -7603730402445076963
+    second: Walk_strip7_3
+  - first:
+      213: 4340869489526973158
+    second: Walk_strip7_4
+  - first:
+      213: -7169550919909820046
+    second: Walk_strip7_5
+  - first:
+      213: 2877664650714313096
+    second: Walk_strip7_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walk_strip7_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 7
+        width: 46
+        height: 62
+      alignment: 9
+      pivot: {x: 0.49278584, y: 0.0075746584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5cd4f75e0cbf9f0800000000000000
+      internalID: -433540847195273764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_strip7_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 8
+        width: 54
+        height: 61
+      alignment: 9
+      pivot: {x: 0.49999985, y: 0.015822785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b487891e342cd30800000000000000
+      internalID: 4450194018000194450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_strip7_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 11
+        width: 51
+        height: 58
+      alignment: 9
+      pivot: {x: 0.4999997, y: 0.0022222584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdaa36f01979d1bc0800000000000000
+      internalID: -3810723060401329441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_strip7_3
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 7
+        width: 62
+        height: 62
+      alignment: 9
+      pivot: {x: 0.49464762, y: 0.0075746584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d165c6a3c7f1a7690800000000000000
+      internalID: -7603730402445076963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_strip7_4
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 7
+        width: 53
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5187844, y: -0.0031302436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e226934dcddd3c30800000000000000
+      internalID: 4340869489526973158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_strip7_5
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 5
+        width: 53
+        height: 64
+      alignment: 9
+      pivot: {x: 0.51878387, y: 0.022963084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27933bb9c63a08c90800000000000000
+      internalID: -7169550919909820046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_strip7_6
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1
+        width: 46
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0.021742992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8817688d0c48fe720800000000000000
+      internalID: 2877664650714313096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: baf66d86f994acd419ffc74709fe72ba
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Walk_strip7_0: -433540847195273764
+      Walk_strip7_1: 4450194018000194450
+      Walk_strip7_2: -3810723060401329441
+      Walk_strip7_3: -7603730402445076963
+      Walk_strip7_4: 4340869489526973158
+      Walk_strip7_5: -7169550919909820046
+      Walk_strip7_6: 2877664650714313096
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
