@@ -82,10 +82,13 @@ public class EnemyController : MonoBehaviour
 
     void Die()
     {
+        if (isDead) return;
+
         isDead = true;
         animator.SetTrigger("Death");
-        GetComponent<Collider2D>().enabled = false;
-        Destroy(gameObject, 1.5f); // ลบ GameObject ออกจากฉากหลังจาก 1.5 วินาที
+        GetComponent<Collider2D>().enabled = false; // ปิดการชนกัน
+        this.enabled = false; // ปิดการทำงานของสคริปต์
+        Destroy(gameObject, 1.5f); // รอ 1.5 วิ ก่อนลบออก
     }
 
 

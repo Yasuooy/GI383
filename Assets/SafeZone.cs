@@ -10,7 +10,7 @@ public class SafeZoneTrigger : MonoBehaviour
             if (player != null)
             {
                 player.SetSafeZone(transform.position);  // อัปเดต Safe Zone เป็นตำแหน่งใหม่
-                Debug.Log("Safe Zone updated to: " + transform.position);
+                Debug.Log("✅ Safe Zone Updated: " + transform.position);
             }
         }
     }

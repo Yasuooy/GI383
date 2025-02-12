@@ -3,10 +3,10 @@
 public class Projectile : MonoBehaviour
 {
     public float speed = 10f;   // ความเร็วกระสุน
-    public float lifetime = 2f; // ระยะเวลาที่กระสุนจะหายไป
-    public int damage = 100;    // ดาเมจที่ทำได้
+    public float lifetime = 2f; // เวลากระสุนจะหายไป
+    public int damage = 100;    // ดาเมจที่กระสุนทำได้
 
-    private Rigidbody2D rb; // ตัวแปร Rigidbody2D
+    private Rigidbody2D rb;
 
     void Start()
     {
@@ -14,27 +14,27 @@ public class Projectile : MonoBehaviour
 
         if (rb != null)
         {
-            rb.linearVelocity = transform.right * speed; // ทำให้กระสุนเคลื่อนที่ไปข้างหน้า
+            float direction = Mathf.Sign(transform.localScale.x); // หาทิศทาง (1 = ขวา, -1 = ซ้าย)
+            rb.linearVelocity = new Vector2(speed * direction, 0); // ให้กระสุนเคลื่อนที่ไปในทิศทางที่ตัวละครหันไป
         }
         else
         {
-            Debug.LogError("Projectile ไม่มี Rigidbody2D! โปรดตรวจสอบ Prefab.");
+            Debug.LogError("❌ Projectile ไม่มี Rigidbody2D! โปรดตรวจสอบ Prefab.");
         }
 
-        Destroy(gameObject, lifetime); // ทำลายกระสุนหลังจากเวลาที่กำหนด
+        Destroy(gameObject, lifetime); // ลบกระสุนหลังจากเวลาที่กำหนด
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<EnemyController>()?.TakeDamage(damage);
-            Destroy(gameObject);
-        }
-        else if (other.CompareTag("Box"))
-        {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+            EnemyController enemy = other.GetComponent<EnemyController>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage); // ให้ศัตรูรับดาเมจ
+            }
+            Destroy(gameObject); // ทำลายกระสุนหลังชน
         }
     }
 }
