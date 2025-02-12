@@ -28,6 +28,7 @@ public class HeroKnight : MonoBehaviour {
     private bool isInvincible = false;
 
 
+
     // Use this for initialization
     void Start ()
     {
@@ -207,5 +208,7 @@ public class HeroKnight : MonoBehaviour {
         isInvincible = false; // ปิดสถานะอมตะ
         m_rolling = false;
     }
+    
+
 
 }

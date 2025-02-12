@@ -6,10 +6,14 @@ public class DeathZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
+            PlayerController player = collision.GetComponent<PlayerController>();
+
+            if (player != null)
             {
-                playerHealth.TakeDamage(playerHealth.CurrentHealth);  // ลดพลังชีวิตทั้งหมด (ตายทันที)
+                Debug.Log("💀 Player hit Death Zone!");
+
+                // ทำให้ผู้เล่นตาย (และ Respawn ถ้ามี Safe Zone)
+                player.TakeDamage(player.GetMaxHealth());
             }
         }
     }

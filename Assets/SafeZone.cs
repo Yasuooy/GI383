@@ -6,10 +6,11 @@ public class SafeZoneTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
+            PlayerController player = collision.GetComponent<PlayerController>();
+            if (player != null)
             {
-                playerHealth.SetSafeZone(transform.position);  // อัพเดตตำแหน่ง Safe Zone
+                player.SetSafeZone(transform.position);  // อัปเดต Safe Zone เป็นตำแหน่งใหม่
+                Debug.Log("Safe Zone updated to: " + transform.position);
             }
         }
     }

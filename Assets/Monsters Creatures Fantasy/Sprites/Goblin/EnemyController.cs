@@ -10,6 +10,8 @@ public class EnemyController : MonoBehaviour
     private Animator animator;
     private Transform player;
     private bool isDead = false;
+    [SerializeField] private float attackCooldown = 1.5f; // คูลดาวน์ระหว่างโจมตี
+    private float nextAttackTime = 0f;
 
     void Start()
     {
@@ -48,7 +50,18 @@ public class EnemyController : MonoBehaviour
     void AttackPlayer()
     {
         animator.SetBool("Run", false);
-        animator.SetTrigger("Attack1");
+
+        if (Time.time >= nextAttackTime)
+        {
+            animator.SetTrigger("Attack1");
+            nextAttackTime = Time.time + attackCooldown;
+            Invoke("ResetAttackTrigger", 0.1f); // ล้างค่า Trigger หลังโจมตี
+        }
+    }
+
+    void ResetAttackTrigger()
+    {
+        animator.ResetTrigger("Attack1");
     }
 
     void Idle()
@@ -72,8 +85,10 @@ public class EnemyController : MonoBehaviour
         isDead = true;
         animator.SetTrigger("Death");
         GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;  // ปิดการทำงานของ EnemyController
+        Destroy(gameObject, 1.5f); // ลบ GameObject ออกจากฉากหลังจาก 1.5 วินาที
     }
+
+
 
     private void FlipSprite(float direction)
     {
